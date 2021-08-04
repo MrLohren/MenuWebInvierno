@@ -5,4 +5,8 @@ import 'bootstrap/dist/css/bootstrap.css'
 
 const container = document.getElementById('root')
 
-ReactDOM.render(<Card />, container)
+ReactDOM.render(<div className='row'>
+    <Card />
+    <Card />
+    <Card />
+</div>, container)

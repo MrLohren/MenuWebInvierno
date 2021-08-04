@@ -1,0 +1,20 @@
+.card-container{
+    position: relative;
+    text-align: center;
+    border: solid 1px red;
+}
+
+.card-container img{
+    width: 100%;
+    height: auto;
+    
+}
+
+.card-container .card-text{
+    color: white;
+    -webkit-text-stroke: 2px black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
