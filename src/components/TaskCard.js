@@ -5,14 +5,10 @@ class TaskCard extends React.Component {
     render() {
         const { image, taskname, alt } = this.props
         return (
-            <div className="card-container mx-auto col-3">
-                <div>
-                    <img src={image} alt={alt} />
-                </div>
-                <div className='card-text col-sm'>
-                    <h1>{taskname}</h1>
-                </div>
-            </div>
+            <button className="card-container mx-auto col-sm-3">
+                <img src={image} alt={alt} />
+                <h1 className='card-text col-sm'>{taskname}</h1>
+            </button>
         )
     }
 }

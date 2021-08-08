@@ -1,5 +1,6 @@
 import React from 'react'
 import TaskCard from '../components/TaskCard'
+import Greetings from '../components/Greetings'
 import Header from '../components/Header'
 import colorImage from '../images/tasks/color.png'
 import pianoDoggo from '../images/tasks/piano_doggo.jpg'
@@ -13,12 +14,15 @@ class Menu extends React.Component {
                 <div className='header-container'>
                     <Header />
                 </div>
+                <div className='greeting-container'>
+                    <Greetings 
+                    name = 'Lohren' />
+                </div>
                 <div className='task-container'>
-                    <img/>
-                    <div className='tasks row span8'>
+                    <div className='tasks row'>
                         <TaskCard
                             image={colorImage}
-                            alt='Piano Generator'
+                            alt='Color Generator'
                             taskname='Color Generator' />
                         <TaskCard
                             image={pianoDoggo}

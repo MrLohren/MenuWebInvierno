@@ -1,3 +1,21 @@
-.header-container{
-    background-color: indigo;
+.header-container {
+    position: fixed;
+    top: 0;
+    background-color: #333333;
+    z-index: 150;
+    height: 8.5vh;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.header-container img {
+    object-fit: scale-down;
+    height: 100%;
+}
+
+.nav-bar button {
+    position: absolute;
+    border: none;
+    /* top: 0.75em; */
+    left: 0.75rem;
+    height: 100%;
 }

@@ -1,4 +1,5 @@
-.menu-container{
+.menu-container {
+    margin-top: 8.5vh;
 }
 
 .header-container {
@@ -7,10 +8,15 @@
 
 .task-container {
     position: relative;
-    background-color: green;
+    background-image: url('https://images.pexels.com/photos/167699/pexels-photo-167699.jpeg?auto=compress&cs=tinysrgb&h=650&w=940');
+    background-size: 100%;
+    background-position: center;
     width: 100%;
+    border: 1px solid rgba(51,51,51, .5);
 }
 
 .task-container .tasks {
-    z-index: 999;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    z-index: 500;
 }
