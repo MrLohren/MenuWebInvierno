@@ -1,4 +1,6 @@
 import React from 'react'
+import SideDrawer from '../components/SideDrawer'
+import Backdrop from '../components/Backdrop'
 import TaskCard from '../components/TaskCard'
 import Greetings from '../components/Greetings'
 import Header from '../components/Header'
@@ -8,15 +10,36 @@ import TBD from '../images/tasks/doggo_tbd2.jpg'
 import '../components/styles/Menu.css'
 
 class Menu extends React.Component {
+    state = {
+        SideDrawerOpen: false
+    }
+
+    drawerToggleClickHandler = () => {
+        this.setState((prevState) => {
+            return { SideDrawerOpen: !prevState.SideDrawerOpen };
+        });
+    };
+
+    backdropClickHandler = () => {
+        this.setState({SideDrawerOpen: false});
+    }
+
     render() {
+        let backDrop;
+
+        if (this.state.SideDrawerOpen) {
+            backDrop = <Backdrop click={this.backdropClickHandler}/>
+        }
         return (
             <div className='menu-container'>
                 <div className='header-container'>
-                    <Header />
+                    <Header drawerClickHandler={this.drawerToggleClickHandler} />
                 </div>
+                <SideDrawer show={this.state.SideDrawerOpen}/>
+                {backDrop}
                 <div className='greeting-container'>
-                    <Greetings 
-                    name = 'Lohren' />
+                    <Greetings
+                        name='Lohren' />
                 </div>
                 <div className='task-container'>
                     <div className='tasks row'>

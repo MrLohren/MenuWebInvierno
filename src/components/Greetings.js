@@ -6,7 +6,7 @@ class Greetings extends React.Component {
         const { name } = this.props
         return (
             <div className='greetings-container'>
-                <h1>Hola, {name},</h1>
+                <h1>Hola, {name}</h1>
                 <p>¿Qué planeas hacer hoy?</p>
             </div>
         )

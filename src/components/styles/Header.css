@@ -12,10 +12,9 @@
     height: 100%;
 }
 
-.nav-bar button {
-    position: absolute;
-    border: none;
-    /* top: 0.75em; */
-    left: 0.75rem;
-    height: 100%;
+.nav-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
 }
