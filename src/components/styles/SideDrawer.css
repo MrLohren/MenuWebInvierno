@@ -1,0 +1,41 @@
+.sidedrawer-container {
+    position: fixed;
+    height: 100%;
+    z-index: 250;
+    background: white;
+    top: 0;
+    left: 0;
+    width: 70%;
+    max-width: 350px;
+    transform: translateX(-100%);
+    transition: transform 0.2s ease-out;
+}
+
+.sidedrawer-container.open {
+    box-shadow: 1px 0px 7px rgba(22, 52, 78, 0.5);
+    transform: translateX(0);
+}
+
+.sidedrawer-container ul {
+    height: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sidedrawer-container li {
+    margin: 0.5rem 0;
+}
+
+.sidedrawer-container a {
+    color: #222222;
+    text-decoration: none;
+}
+
+.sidedrawer-container a:hover, .sidedrawer-container a:active {
+    padding: 2px 4px;
+    border-radius: 5px;
+    background: #333333;
+    color: #dcf3ff;
+}

@@ -1,0 +1,9 @@
+.backdrop-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 248;
+    width: 100%;
+    height: 100%;
+    background: rgba(22, 52, 78, 0.3);
+}
