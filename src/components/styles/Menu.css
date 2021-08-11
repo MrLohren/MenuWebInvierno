@@ -16,7 +16,6 @@
 }
 
 .task-container .tasks {
-    margin-top: 1vh;
-    margin-bottom: 1vh;
+    padding: 3vh 0;
     z-index: 500;
 }
